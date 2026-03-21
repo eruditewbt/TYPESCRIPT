@@ -1,0 +1,15 @@
+{
+  "name": "ts-academy",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TypeScript Academy monorepo for learning, building, collaboration, and monetization.",
+  "packageManager": "pnpm@10.6.1",
+  "scripts": {
+    "dev": "pnpm --parallel --filter @ts-academy/api --filter @ts-academy/web dev",
+    "build": "pnpm -r --if-present build",
+    "lint": "pnpm -r --if-present lint",
+    "test": "pnpm -r --if-present test",
+    "format": "pnpm -r --if-present format",
+    "cli": "pnpm --filter @ts-academy/cli dev"
+  }
+}

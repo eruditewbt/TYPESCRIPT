@@ -1,0 +1,134 @@
+:root {
+  font-family: "Segoe UI", sans-serif;
+  color: #f6efe7;
+  background:
+    radial-gradient(circle at top, rgba(255, 179, 71, 0.28), transparent 32%),
+    linear-gradient(160deg, #10212b 0%, #0b1418 55%, #1f130d 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.shell {
+  display: grid;
+  gap: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+}
+
+.hero {
+  max-width: 700px;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #ffb347;
+  font-size: 0.8rem;
+}
+
+.hero h1,
+.card h2,
+.card h3 {
+  margin: 0;
+}
+
+.lede,
+.muted,
+.message,
+label {
+  color: #d8d7d1;
+}
+
+.card {
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  background: rgba(7, 12, 15, 0.74);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+}
+
+.auth-form,
+.dashboard {
+  display: grid;
+  gap: 1rem;
+}
+
+.mode-switch {
+  display: inline-flex;
+  gap: 0.5rem;
+  padding: 0.35rem;
+  width: fit-content;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 999px;
+}
+
+.mode-switch button,
+.secondary {
+  padding: 0.7rem 1rem;
+  background: transparent;
+  color: #f6efe7;
+}
+
+.mode-switch .active {
+  background: #ffb347;
+  color: #1b120c;
+}
+
+label {
+  display: grid;
+  gap: 0.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+
+form button[type="submit"] {
+  padding: 0.95rem 1.1rem;
+  background: linear-gradient(135deg, #ffb347, #ffd280);
+  color: #26150d;
+  font-weight: 700;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.dashboard-grid article {
+  padding: 1rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.message {
+  margin: 1rem 0 0;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auth API</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Auth API</h1>
+
+  <p>Location: <code>apps/api/src/server.ts</code></p>
+
+  <h2>Endpoints</h2>
+  <ul>
+    <li>POST /auth/register</li>
+    <li>POST /auth/login</li>
+    <li>GET /me</li>
+  </ul>
+
+  <h2>How it works</h2>
+  <p>
+    Users are stored in memory. Tokens are generated and mapped to user IDs.
+  </p>
+
+  <h2>Task</h2>
+  <div class="task">
+    <p>Add a logout endpoint:</p>
+    <ul>
+      <li>POST /auth/logout</li>
+      <li>Invalidate token</li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>

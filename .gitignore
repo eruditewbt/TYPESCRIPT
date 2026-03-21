@@ -1,0 +1,12 @@
+node_modules/
+.turbo/
+dist/
+build/
+.next/
+.expo/
+coverage/
+.env
+.env.*
+!.env.example
+pnpm-lock.yaml
+mext.md
