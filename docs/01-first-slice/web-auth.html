@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web Auth</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <h2>TS Academy</h2>
+
+        <!-- CORE -->
+        <h3>Start</h3>
+        <a href="../index.html">Home</a>
+        <a href="../getting-started.html">Getting Started</a>
+
+        <!-- FIRST SLICE -->
+        <h3>First Slice</h3>
+        <a href="../01-first-slice/overview.html">Overview</a>
+        <a href="../01-first-slice/shared-types.html">Shared Types</a>
+        <a href="../01-first-slice/api-auth.html">API</a>
+        <a href="../01-first-slice/web-auth.html">Web</a>
+        <a href="../01-first-slice/cli.html">CLI</a>
+        <a href="../01-first-slice/flow.html">Flow</a>
+
+        <!-- CONTRIBUTIONS -->
+        <h3>Contributions</h3>
+        <a href="../02-contributions/how-to-contribute.html"
+          >How to Contribute</a
+        >
+        <a href="../02-contributions/tasks.html">Task System</a>
+        <a href="../02-contributions/first-tasks.html">First Tasks</a>
+
+        <!-- NEXT SLICES -->
+        <h3>Next Slices</h3>
+        <a href="../03-next-slices/organizations.html">Organizations</a>
+        <a href="../03-next-slices/protected-routes.html">Protected Routes</a>
+
+        <!-- DEPLOYMENT -->
+        <h3>Deployment</h3>
+        <a href="../04-deployment/building.html">Building</a>
+        <a href="../04-deployment/deploying.html">Deploying</a>
+        <a href="../04-deployment/running-locally.html">Running Locally</a>
+
+        <!-- MONETIZATION -->
+        <h3>Monetization</h3>
+        <a href="../05-monetization/cohort.html">Cohort Model</a>
+        <a href="../05-monetization/selling.html">Selling</a>
+        <a href="../05-monetization/templates.html">Templates</a>
+
+        <!-- SYSTEM DOCS -->
+        <h3>System</h3>
+        <a href="../vision.html">Vision</a>
+        <a href="../product-ladder.html">Product Ladder</a>
+        <a href="../curriculum.html">Curriculum</a>
+        <a href="../business-model.html">Business Model</a>
+        <a href="../mvp-roadmap.html">MVP Roadmap</a>
+      </aside>
+
+      <!-- CONTENT -->
+      <main class="content">
+        <div class="content-inner">
+          <section class="hero">
+            <h1>Web Auth (React + TypeScript)</h1>
+            <p>
+              This is the frontend of your system. It handles login,
+              registration, token storage, and loading the authenticated user.
+            </p>
+          </section>
+
+          <div class="card">
+            <h2>Core Responsibilities</h2>
+
+            <ul>
+              <li>Collect email + password</li>
+              <li>Send requests to API</li>
+              <li>Store authentication token</li>
+              <li>Fetch current user</li>
+              <li>Render dashboard</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h2>Auth Flow</h2>
+
+            <pre><code>
+User submits form
+  ↓
+POST /auth/register OR /auth/login
+  ↓
+Receive token
+  ↓
+Save to localStorage
+  ↓
+Call GET /me
+  ↓
+Render dashboard
+        </code></pre>
+          </div>
+
+          <div class="card">
+            <h2>Key State</h2>
+
+            <pre><code>
+const [email, setEmail]
+const [password, setPassword]
+const [token, setToken]
+const [user, setUser]
+        </code></pre>
+
+            <p>
+              These control the entire authentication system on the frontend.
+            </p>
+          </div>
+
+          <div class="card">
+            <h2>API Call Example</h2>
+
+            <pre><code>
+fetch("http://localhost:3000/auth/login", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({ email, password })
+})
+        </code></pre>
+          </div>
+
+          <div class="card">
+            <h2>Token Storage</h2>
+
+            <pre><code>
+localStorage.setItem("ts_academy_token", token);
+        </code></pre>
+
+            <p>This allows the user to stay logged in across refreshes.</p>
+          </div>
+
+          <div class="card">
+            <h2>Fetching Current User</h2>
+
+            <pre><code>
+fetch("/me", {
+  headers: {
+    Authorization: `Bearer ${token}`
+  }
+})
+        </code></pre>
+          </div>
+
+          <div class="card">
+            <h2>UI States</h2>
+
+            <ul>
+              <li>Unauthenticated → show form</li>
+              <li>Loading → show progress</li>
+              <li>Authenticated → show dashboard</li>
+            </ul>
+          </div>
+
+          <div class="task">
+            <h3>Your Task</h3>
+            <p>Modify the web app to:</p>
+
+            <ul>
+              <li>Add a logout confirmation</li>
+              <li>Display user ID</li>
+              <li>Handle API errors better</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

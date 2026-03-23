@@ -1,21 +1,13 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <title>Getting Started</title>
-  <link rel="stylesheet" href="../styles.css">
-</head>
-<body> -->
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>TypeScript Academy</title>
+    <title>Business Model</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="layout">
-       <aside class="sidebar">
+      <aside class="sidebar">
         <h2>TS Academy</h2>
 
         <!-- START -->
@@ -34,7 +26,9 @@
 
         <!-- CONTRIBUTIONS -->
         <h3>Contributions</h3>
-        <a href="./02-contributions/how-to-contribute.html">How to Contribute</a>
+        <a href="./02-contributions/how-to-contribute.html"
+          >How to Contribute</a
+        >
         <a href="./02-contributions/tasks.html">Task System</a>
         <a href="./02-contributions/first-tasks.html">First Tasks</a>
 
@@ -63,32 +57,48 @@
         <a href="./business-model.html">Business Model</a>
         <a href="./mvp-roadmap.html">MVP Roadmap</a>
       </aside>
-
       <main class="content">
-        <div class="container">
-          <h1>Getting Started</h1>
+        <div class="content-inner">
+          <section class="hero">
+            <h1>Business Model</h1>
+          </section>
 
-          <h2>Requirements</h2>
-          <ul>
-            <li>Node.js</li>
-            <li>pnpm (via corepack)</li>
-          </ul>
+          <div class="card">
+            <h2>Early Revenue</h2>
+            <ul>
+              <li>Starter kits</li>
+              <li>Cohorts</li>
+              <li>Subscriptions</li>
+            </ul>
+          </div>
 
-          <pre><code>corepack enable
-corepack pnpm install
-pnpm dev</code></pre>
+          <div class="card">
+            <h2>Mid Stage</h2>
+            <ul>
+              <li>Templates</li>
+              <li>Team tools</li>
+              <li>Licensing</li>
+            </ul>
+          </div>
 
-          <h2>Local URLs</h2>
-          <ul>
-            <li>API: http://localhost:3000</li>
-            <li>Web: http://localhost:5173</li>
-          </ul>
+          <div class="card">
+            <h2>Long Term</h2>
+            <ul>
+              <li>Marketplace fees</li>
+              <li>Hosting</li>
+              <li>Enterprise services</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h2>Positioning</h2>
+            <p>
+              Learn TypeScript by building real products and turning them into
+              revenue-generating assets.
+            </p>
+          </div>
         </div>
       </main>
     </div>
-    <script src="./script.js"></script>
   </body>
 </html>
-
-<!-- </body>
-</html> -->

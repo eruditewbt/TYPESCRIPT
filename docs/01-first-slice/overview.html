@@ -2,11 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>TypeScript Academy</title>
+    <title>First Slice Overview</title>
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
     <div class="layout">
+      <!-- SIDEBAR -->
       <!-- SIDEBAR -->
       <aside class="sidebar">
         <h2>TS Academy</h2>
@@ -59,14 +60,82 @@
         <a href="../mvp-roadmap.html">MVP Roadmap</a>
       </aside>
 
+      <!-- CONTENT -->
       <main class="content">
         <div class="content-inner">
-          <h1>Building</h1>
+          <section class="hero">
+            <h1>First Slice: Full-Stack Auth System</h1>
+            <p>
+              This is your first production-grade TypeScript system. You are not
+              learning concepts — you are building a real product.
+            </p>
+          </section>
 
-          <pre><code>pnpm build</code></pre>
+          <div class="card">
+            <h2>What You Are Building</h2>
+            <p>A complete authentication system with:</p>
+
+            <ul>
+              <li>Shared TypeScript contracts</li>
+              <li>Backend API (Fastify)</li>
+              <li>React web app</li>
+              <li>CLI to run everything</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h2>System Architecture</h2>
+
+            <pre><code>
+apps/
+  api/        → Auth API
+  web/        → React Dashboard
+packages/
+  types/      → Shared contracts
+tools/
+  cli/        → Dev launcher
+        </code></pre>
+
+            <p>Everything is connected through shared TypeScript types.</p>
+          </div>
+
+          <div class="card">
+            <h2>What Happens in This Slice</h2>
+
+            <ol>
+              <li>User registers via web app</li>
+              <li>API creates account + token</li>
+              <li>Web stores token</li>
+              <li>Web calls <code>/me</code></li>
+              <li>User dashboard loads</li>
+            </ol>
+          </div>
+
+          <div class="card">
+            <h2>Why This Matters</h2>
+
+            <p>This slice proves:</p>
+
+            <ul>
+              <li>You can build full-stack systems with TypeScript</li>
+              <li>You understand real authentication flow</li>
+              <li>You can connect frontend + backend</li>
+              <li>You are working at production level</li>
+            </ul>
+          </div>
+
+          <div class="task">
+            <h3>Your Mission</h3>
+            <p>Run the system locally and successfully:</p>
+
+            <ul>
+              <li>Create an account</li>
+              <li>Log in</li>
+              <li>See your dashboard</li>
+            </ul>
+          </div>
         </div>
       </main>
     </div>
-    <script src="../script.js"></script>
   </body>
 </html>

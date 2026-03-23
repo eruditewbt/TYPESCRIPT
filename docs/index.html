@@ -1,71 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>TypeScript Academy</title>
-  <link rel="stylesheet" href="/styles.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>TypeScript Academy</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-<div class="layout">
+  <body>
+    <div class="layout">
 
-  <aside class="sidebar">
-    <h2>TS Academy</h2>
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <h2>TS Academy</h2>
 
-    <a href="/index.html">Home</a>
-    <a href="/getting-started.html">Getting Started</a>
+        <!-- START -->
+        <h3>Start</h3>
+        <a class="active" href="./index.html">Home</a>
+        <a href="./getting-started.html">Getting Started</a>
 
-    <h3>First Slice</h3>
-    <a href="/01-first-slice/overview.html">Overview</a>
-    <a href="/01-first-slice/shared-types.html">Shared Types</a>
-    <a href="/01-first-slice/api-auth.html">API</a>
-    <a href="/01-first-slice/web-auth.html">Web</a>
-    <a href="/01-first-slice/cli.html">CLI</a>
-    <a href="/01-first-slice/flow.html">Flow</a>
+        <!-- FIRST SLICE -->
+        <h3>First Slice</h3>
+        <a href="./01-first-slice/overview.html">Overview</a>
+        <a href="./01-first-slice/shared-types.html">Shared Types</a>
+        <a href="./01-first-slice/api-auth.html">API</a>
+        <a href="./01-first-slice/web-auth.html">Web</a>
+        <a href="./01-first-slice/cli.html">CLI</a>
+        <a href="./01-first-slice/flow.html">Flow</a>
 
-    <h3>Contributions</h3>
-    <a href="/02-contributions/how-to-contribute.html">How to Contribute</a>
-    <a href="/02-contributions/tasks.html">Task System</a>
-    <a href="/02-contributions/first-tasks.html">First Tasks</a>
+        <!-- CONTRIBUTIONS -->
+        <h3>Contributions</h3>
+        <a href="./02-contributions/how-to-contribute.html">How to Contribute</a>
+        <a href="./02-contributions/tasks.html">Task System</a>
+        <a href="./02-contributions/first-tasks.html">First Tasks</a>
 
-    <h3>Next</h3>
-    <a href="/03-next-slices/organizations.html">Organizations</a>
-    <a href="/03-next-slices/protected-routes.html">Protected Routes</a>
-  </aside>
+        <!-- NEXT SLICES -->
+        <h3>Next Slices</h3>
+        <a href="./03-next-slices/organizations.html">Organizations</a>
+        <a href="./03-next-slices/protected-routes.html">Protected Routes</a>
 
-  <main class="content">
+        <!-- DEPLOYMENT -->
+        <h3>Deployment</h3>
+        <a href="./04-deployment/building.html">Building</a>
+        <a href="./04-deployment/deploying.html">Deploying</a>
+        <a href="./04-deployment/running-locally.html">Running Locally</a>
 
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <title>TypeScript Academy</title>
-  <link rel="stylesheet" href="./styles.css">
-</head>
-<body> -->
+        <!-- MONETIZATION -->
+        <h3>Monetization</h3>
+        <a href="./05-monetization/cohort.html">Cohort Model</a>
+        <a href="./05-monetization/selling.html">Selling</a>
+        <a href="./05-monetization/templates.html">Templates</a>
 
+        <!-- SYSTEM -->
+        <h3>System</h3>
+        <a href="./vision.html">Vision</a>
+        <a href="./product-ladder.html">Product Ladder</a>
+        <a href="./curriculum.html">Curriculum</a>
+        <a href="./business-model.html">Business Model</a>
+        <a href="./mvp-roadmap.html">MVP Roadmap</a>
+      </aside>
 
-<div class="container">
-  <h1>TypeScript Academy</h1>
-  <p>Learn TypeScript by building a real full-stack system.</p>
+      <!-- CONTENT -->
+      <main class="content">
+        <div class="content-inner">
 
-  <h2>What You Will Build</h2>
-  <ul>
-    <li>CLI tool</li>
-    <li>Backend API</li>
-    <li>React dashboard</li>
-    <li>Authentication system</li>
-  </ul>
+          <!-- HERO -->
+          <section class="hero">
+            <h1>TypeScript Academy</h1>
+            <p>
+              Learn TypeScript by building real products, collaborating like a real team,
+              and shipping software people can use or pay for.
+            </p>
 
-  <a class="button" href="./getting-started.html">Start Learning</a>
-  <a class="button" href="https://github.com/eruditewbt/TYPESCRIPT/tree/master">Github Repo Link</a>
-</div>
+            <div style="margin-top: 1.5rem;">
+              <a class="button" href="./getting-started.html">Start Learning</a>
+              <a
+                class="button"
+                href="https://github.com/eruditewbt/TYPESCRIPT/tree/master"
+                target="_blank"
+              >
+                View Repository
+              </a>
+            </div>
+          </section>
 
-<!-- </body>
-</html> -->
+          <!-- WHAT YOU BUILD -->
+          <div class="card">
+            <h2>What You Will Build</h2>
 
-  </main>
+            <ul>
+              <li>TypeScript CLI tool</li>
+              <li>Backend API (auth + system core)</li>
+              <li>React dashboard</li>
+              <li>Full authentication system</li>
+              <li>Production-ready SaaS foundation</li>
+            </ul>
+          </div>
 
-</div>
+          <!-- LEARNING MODEL -->
+          <div class="card">
+            <h2>How You Learn</h2>
 
-</body>
+            <ul>
+              <li><strong>Learn</strong> core concepts</li>
+              <li><strong>Build</strong> real features</li>
+              <li><strong>Collaborate</strong> like a team</li>
+              <li><strong>Ship</strong> working software</li>
+              <li><strong>Monetize</strong> what you create</li>
+            </ul>
+          </div>
+
+          <!-- FIRST STEP -->
+          <div class="card">
+            <h2>Start With Your First Slice</h2>
+
+            <p>
+              Your first goal is to build a working authentication system across
+              backend and frontend.
+            </p>
+
+            <a class="button" href="./01-first-slice/overview.html">
+              Begin First Slice →
+            </a>
+          </div>
+
+          <!-- VALUE -->
+          <div class="card">
+            <h2>Why This Is Different</h2>
+
+            <ul>
+              <li>No fake projects</li>
+              <li>No isolated tutorials</li>
+              <li>Everything connects into one system</li>
+              <li>You build something you can actually use or sell</li>
+            </ul>
+          </div>
+
+        </div>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
 </html>

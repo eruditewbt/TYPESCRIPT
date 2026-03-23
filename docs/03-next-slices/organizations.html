@@ -1,68 +1,83 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>TypeScript Academy</title>
-  <link rel="stylesheet" href="/styles.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>TypeScript Academy</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <h2>TS Academy</h2>
 
-<div class="layout">
+        <!-- CORE -->
+        <h3>Start</h3>
+        <a href="../index.html">Home</a>
+        <a href="../getting-started.html">Getting Started</a>
 
-  <aside class="sidebar">
-    <h2>TS Academy</h2>
+        <!-- FIRST SLICE -->
+        <h3>First Slice</h3>
+        <a href="../01-first-slice/overview.html">Overview</a>
+        <a href="../01-first-slice/shared-types.html">Shared Types</a>
+        <a href="../01-first-slice/api-auth.html">API</a>
+        <a href="../01-first-slice/web-auth.html">Web</a>
+        <a href="../01-first-slice/cli.html">CLI</a>
+        <a href="../01-first-slice/flow.html">Flow</a>
 
-    <a href="/index.html">Home</a>
-    <a href="/getting-started.html">Getting Started</a>
+        <!-- CONTRIBUTIONS -->
+        <h3>Contributions</h3>
+        <a href="../02-contributions/how-to-contribute.html"
+          >How to Contribute</a
+        >
+        <a href="../02-contributions/tasks.html">Task System</a>
+        <a href="../02-contributions/first-tasks.html">First Tasks</a>
 
-    <h3>First Slice</h3>
-    <a href="/01-first-slice/overview.html">Overview</a>
-    <a href="/01-first-slice/shared-types.html">Shared Types</a>
-    <a href="/01-first-slice/api-auth.html">API</a>
-    <a href="/01-first-slice/web-auth.html">Web</a>
-    <a href="/01-first-slice/cli.html">CLI</a>
-    <a href="/01-first-slice/flow.html">Flow</a>
+        <!-- NEXT SLICES -->
+        <h3>Next Slices</h3>
+        <a href="../03-next-slices/organizations.html">Organizations</a>
+        <a href="../03-next-slices/protected-routes.html">Protected Routes</a>
 
-    <h3>Contributions</h3>
-    <a href="/02-contributions/how-to-contribute.html">How to Contribute</a>
-    <a href="/02-contributions/tasks.html">Task System</a>
-    <a href="/02-contributions/first-tasks.html">First Tasks</a>
+        <!-- DEPLOYMENT -->
+        <h3>Deployment</h3>
+        <a href="../04-deployment/building.html">Building</a>
+        <a href="../04-deployment/deploying.html">Deploying</a>
+        <a href="../04-deployment/running-locally.html">Running Locally</a>
 
-    <h3>Next</h3>
-    <a href="/03-next-slices/organizations.html">Organizations</a>
-    <a href="/03-next-slices/protected-routes.html">Protected Routes</a>
-  </aside>
+        <!-- MONETIZATION -->
+        <h3>Monetization</h3>
+        <a href="../05-monetization/cohort.html">Cohort Model</a>
+        <a href="../05-monetization/selling.html">Selling</a>
+        <a href="../05-monetization/templates.html">Templates</a>
 
-  <main class="content">
+        <!-- SYSTEM DOCS -->
+        <h3>System</h3>
+        <a href="../vision.html">Vision</a>
+        <a href="../product-ladder.html">Product Ladder</a>
+        <a href="../curriculum.html">Curriculum</a>
+        <a href="../business-model.html">Business Model</a>
+        <a href="../mvp-roadmap.html">MVP Roadmap</a>
+      </aside>
 
+      <main class="content">
+        <div class="content-inner">
+          <h1>Organizations</h1>
 
+          <p>This introduces multi-tenancy.</p>
 
-<div class="content-inner">
-  <h1>Organizations</h1>
+          <h2>Goal</h2>
+          <ul>
+            <li>Create organizations</li>
+            <li>Assign users</li>
+          </ul>
 
-  <p>
-    This introduces multi-tenancy.
-  </p>
-
-  <h2>Goal</h2>
-  <ul>
-    <li>Create organizations</li>
-    <li>Assign users</li>
-  </ul>
-
-  <div class="task">
-    <h3>Task</h3>
-    <p>Create POST /orgs endpoint</p>
-  </div>
-</div>
-
-
-
-
-  </main>
-
-</div>
-
-</body>
+          <div class="task">
+            <h3>Task</h3>
+            <p>Create POST /orgs endpoint</p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="../script.js"></script>
+  </body>
 </html>
